@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(Sans\ titre.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  border-radius: 10px;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #5b3926;
+  border-width: 5px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.even {
+  background-image: url(Case\ blanche.png);
+}
+
+.odd {
+  background-image: url(Case\ noire.png);
+}
+
+.piece {
+  width: 95%;
+  height: 95%;
+  background-color: transparent;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+  margin-top: 4px;
+}
+
+.white {
+  background-image: url('Pion blanc.png');
+}
+
+.black {
+  background-image: url('Pion noir.png');
+  filter: brightness(1); 
+}
+
+.piece.selected {
+  filter: brightness(1.2);
+}
+
+.black.queen {
+  background-image: url(Dame\ noire.png); /* Remplacez 'Dame_noire.png' par le chemin réel de l'image Dame pour les pions noirs */
+}
+
+.white.queen {
+  background-image: url(Dame\ blanche.png); /* Remplacez 'Dame_blanche.png' par le chemin réel de l'image Dame pour les pions blancs */
+}
