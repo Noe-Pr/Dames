@@ -50,11 +50,11 @@ body {
   margin-top: 4px;
 }
 
-.white {
+.blancs {
   background-image: url('Pion blanc.png');
 }
 
-.black {
+.noirs {
   background-image: url('Pion noir.png');
   filter: brightness(1); 
 }
@@ -63,10 +63,35 @@ body {
   filter: brightness(1.2);
 }
 
-.black.queen {
-  background-image: url(Dame\ noire.png); /* Remplacez 'Dame_noire.png' par le chemin réel de l'image Dame pour les pions noirs */
+.noirs.queen {
+  background-image: url(Dame\ noire.png);
 }
 
-.white.queen {
-  background-image: url(Dame\ blanche.png); /* Remplacez 'Dame_blanche.png' par le chemin réel de l'image Dame pour les pions blancs */
+.blancs.queen {
+  background-image: url(Dame\ blanche.png);
+}
+
+/* Styles for endgame */
+
+body.endgame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+h1.endgame {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  color: blancs;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  background-color: rgb(194 113 42 / 43%);
+  height: 73%;
+  width: 100%;
+  padding-top: 27%;
 }
